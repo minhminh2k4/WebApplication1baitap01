@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Your Application Name</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Nguyen Trai university</h1>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            </ul>
+        </nav>
+    </header>
+        
+    <div id="main-content">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>&copy;Trần Văn Minh</p>
+    </footer>
+
+</body>
+</html>
